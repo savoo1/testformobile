@@ -1416,12 +1416,16 @@
 
 @media (max-width: 772px) {
   #choosednumbersarea {
-    max-height: calc(100vh - 250px);
     overflow: auto;
     position: fixed;
     top: 140px;
     left: 0;
-    right: 0; }
+    right: 0;
+    bottom: 80px;
+    display: block;
+    background: whitesmoke; }
+    #choosednumbersarea .item_os {
+      background: #fff !important; }
   .powerballcont .powerballsettings_finish_checkout {
     padding-bottom: 0 !important; }
   .powerballcont .numbersforselect .maxwidthofn {
