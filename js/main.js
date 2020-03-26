@@ -179,6 +179,23 @@ $( ".card_popup_full .areaforclosebox" ).click(function() {
 
 
 
+$( "input" ).on('input',function(e){
+    if($(this).parent().parent().parent()[0].checkValidity()){
+      $(".def_full_height .down_button .button_g button").first().removeClass("disabled");
+      $(".def_full_height .down_button .button_g a").first().removeClass("disabled");
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
 // timer
 
 function makeTimer() {

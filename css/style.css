@@ -1840,6 +1840,29 @@
     .def_full_height .down_button .button_g a:hover {
       text-decoration: none;
       opacity: 0.7; }
+    .def_full_height .down_button .button_g button {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      background-image: linear-gradient(#52cf70, #29bd67);
+      border-radius: 8px;
+      line-height: 58px;
+      transition-duration: 0.15s;
+      transition-property: opacity;
+      color: #fff;
+      font-family: GothamBold;
+      border: 0;
+      font-size: 18px;
+      -webkit-transition: all .25s ease;
+      -moz-transition: all .25s ease;
+      -ms-transition: all .25s ease;
+      -o-transition: all .25s ease;
+      transition: all .25s ease; }
+    .def_full_height .down_button .button_g button:hover {
+      text-decoration: none;
+      opacity: 0.7; }
+    .def_full_height .down_button .button_g .disabled {
+      background: #ABB5BE; }
 
 .def_full_height .def_content_place {
   padding-top: 48px;
@@ -1864,7 +1887,20 @@
     font-family: GothamBold;
     text-align: left;
     text-transform: uppercase;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    color: #333333; }
+  .def_full_height .def_content_place .verifynum {
+    text-align: center;
+    margin-bottom: 20px; }
+  .def_full_height .def_content_place .vynp {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 15px;
+    font-family: GothamMedium;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 25px; }
 
 @media (max-width: 991px) {
   .def_full_height .without_button {
@@ -2001,3 +2037,33 @@
     font-size: 18px;
     font-family: GothamMedium;
     color: #333333; }
+
+.def_full_height .addphone {
+  width: 100%; }
+  .def_full_height .addphone input[type=number]::-webkit-inner-spin-button,
+  .def_full_height .addphone input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+  .def_full_height .addphone input {
+    border: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 27px;
+    font-family: gotham;
+    color: #333333;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 10px; }
+  .def_full_height .addphone input:focus {
+    outline: none; }
+  .def_full_height .addphone *::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(51, 51, 51, 0.3);
+    opacity: 1;
+    /* Firefox */ }
+  .def_full_height .addphone *:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgba(51, 51, 51, 0.3); }
+  .def_full_height .addphone *::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgba(51, 51, 51, 0.3); }
