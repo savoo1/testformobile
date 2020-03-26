@@ -59,10 +59,10 @@ $( ".defpopu .popupbody .contbodypopup .states p" ).click(function() {
 
 });
 
-$( ".select_payment_method" ).click(function() {
-    $(".select_payment_method").removeClass("select_payment_method_activated");
-    $(this).addClass("select_payment_method_activated");
-});
+// $( ".select_payment_method" ).click(function() {
+//     $(".select_payment_method").removeClass("select_payment_method_activated");
+//     $(this).addClass("select_payment_method_activated");
+// });
 
 
 
@@ -180,7 +180,7 @@ $( ".card_popup_full .areaforclosebox" ).click(function() {
 
 
 $( "input" ).on('input',function(e){
-    if($(this).parent().parent().parent()[0].checkValidity()){
+    if($("form")[0].checkValidity()){
       $(".def_full_height .down_button .button_g button").first().removeClass("disabled");
       $(".def_full_height .down_button .button_g a").first().removeClass("disabled");
     }
@@ -188,10 +188,28 @@ $( "input" ).on('input',function(e){
 
 
 
+$( ".def_full_height .createyourprofile_form .inputarea2 input" ).click(function() {
+  $(this).parent().addClass("inputarea2activated");
+});
+
+$('#datainp').on('input',function(event) {
+  var inputLength = event.target.value.length;
+  if(inputLength === 2){
+    var thisVal = event.target.value;
+    thisVal += '/';
+    $(event.target).val(thisVal);
+  }
+})
 
 
 
-
+$( "#cardadded_suc" ).click(function(e) {
+  e.preventDefault();
+  $(".cardadded_suc").addClass("cardadded_suc_active");
+  setTimeout(function(){
+    window.location.href = "addpayment.html";
+  }, 500);
+});
 
 
 

@@ -2417,6 +2417,8 @@ body{
 
 
 			.disabled{
+				pointer-events: none;
+				  cursor: default;
 				background: #ABB5BE;
 			}
 		}
@@ -2450,9 +2452,21 @@ body{
 			margin-bottom: 5px;
 			color: #333333;
 		}
+		.smallalert{
+			font-family: GothamBookItalic;
+			font-size: 12px;
+			padding-top: 20px;
+			margin-bottom: 20px;
+			text-transform: unset;
+			text-align: center;
+		}
 		.verifynum{
 			text-align: center;
 			margin-bottom: 20px;
+		}
+		.createyourprofiletit{
+			text-align: center;
+			margin-bottom: 40px;
 		}
 		.vynp{
 			margin: 0;
@@ -2465,6 +2479,20 @@ body{
 			line-height: 20px;
 
 			margin-bottom: 25px;
+		}
+		.vynp2{
+			margin: 0;
+			padding: 0;
+
+			text-align: center;
+			font-size: 15px;
+			font-family: gotham;
+			text-align: center;
+			line-height: 20px;
+			text-transform: uppercase;
+
+			margin-bottom: 10px;
+			margin-top: -10px;
 		}
 	}
 	.without_button{
@@ -2617,9 +2645,34 @@ body{
 			font-family: gotham;
 			text-align: center;
 			color: #222222;
-			max-width: 300px;
+			max-width: 320px;
 			margin: auto;
 			margin-bottom: 10px;
+		}
+
+		.secp{
+			font-size: 13px;
+			span{
+				font-family: GothamBold
+			}
+		}
+
+		.resendpin{
+			margin: 0;
+			padding: 0;
+
+			text-align: center;
+			a{
+				text-align: center;
+				font-size: 17px;
+				font-family: GothamBold;
+				text-align: center;
+				color: #EC1919;
+				text-transform: uppercase;
+			}
+			a:hover{
+				text-decoration: none;
+			}
 		}
 	}
 	.co_logo{
@@ -2664,11 +2717,15 @@ body{
 			color: #333333;
 			padding-top: 15px;
 			padding-bottom: 15px;
+			z-index: 999;
 
 			box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 10px;
 		}
 		input:focus{
 			outline: none;
+		}
+		.digitalpin{
+			letter-spacing: 11px;
 		}
 
 		*::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -2683,6 +2740,187 @@ body{
 		*::-ms-input-placeholder { /* Microsoft Edge */
 		  color: rgba(51, 51, 51, 0.3);
 		}
+
+
+		.digitalpin::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+		  letter-spacing: 5px;
+		}
+
+		.digitalpin:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		  letter-spacing: 5px;
+		}
+
+		.digitalpin::-ms-input-placeholder { /* Microsoft Edge */
+		  letter-spacing: 5px;
+		}
+	}
+
+
+	.createyourprofile_form{
+		width: 100%;
+		background: #fff;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 10px;
+
+		.inputarea{
+			position: relative;
+			p{
+				margin: 0;
+				padding: 0px;
+
+				font-size: 12px;
+				font-family: GothamMedium;
+				color: rgb(50, 50, 50);
+				text-transform: uppercase;
+				position: absolute;
+				left: 0;
+
+				top: 50%;
+				transform: translateY(-50%);
+
+				z-index: 0;
+			}
+		}
+		.newrowinput{
+			margin-top: 10px;
+			border-top: 1px solid #D8D8D8;
+			padding-top: 10px;
+		}
+		.addborderright{
+			border-right: 1px solid #D8D8D8;
+		}
+
+		input[type=number]::-webkit-inner-spin-button, 
+		input[type=number]::-webkit-outer-spin-button { 
+		  -webkit-appearance: none; 
+		  margin: 0; 
+		}
+		input{
+			border: 0;
+			width: 100%;
+			text-align: left;
+			font-size: 15px;
+			font-family: gotham;
+			color: #333333;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 65px;
+			background: transparent;
+
+			position: relative;
+			z-index: 2;
+		}
+		input:focus{
+			outline: none;
+		}
+		*::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+		  color: rgba(51, 51, 51, 0.3);
+		  opacity: 1; /* Firefox */
+		}
+
+		*:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		  color: rgba(51, 51, 51, 0.3);
+		}
+
+		*::-ms-input-placeholder { /* Microsoft Edge */
+		  color: rgba(51, 51, 51, 0.3);
+		}
+
+		.nameofcard{
+			padding-left: 120px;
+		}
+
+		.inputarea2{
+			position: relative;
+			-webkit-transition: all .25s ease;
+			-moz-transition: all .25s ease;
+			-ms-transition: all .25s ease;
+			-o-transition: all .25s ease;
+			transition: all .25s ease;
+			p{
+				margin: 0;
+				padding: 0px;
+
+				font-size: 14px;
+				font-family: GothamMedium;
+				color: rgba(51, 51, 51, 0.3);
+				text-transform: uppercase;
+				position: absolute;
+				left: 0;
+
+				top: 50%;
+				transform: translateY(-50%);
+
+				z-index: 0;
+				-webkit-transition: all .25s ease;
+				-moz-transition: all .25s ease;
+				-ms-transition: all .25s ease;
+				-o-transition: all .25s ease;
+				transition: all .25s ease;
+			}
+
+			input{
+				border: 0;
+				    width: 100%;
+				    text-align: left;
+				    font-size: 15px;
+				    font-family: gotham;
+				    color: #333333;
+				    padding-top: 5px;
+				    padding-bottom: 5px;
+				    padding-left: 60px;
+				    background: transparent;
+				    position: relative;
+				    z-index: 2;
+				    padding-left: 0;
+			}
+		}
+		.inputarea2activated{
+			margin-top: -3px;
+			p{
+				top: 28px;
+				font-size: 9px;
+				color: #000;
+			}
+		}
+	}
+
+
+	.chosepaymentmethod{
+		a{
+			background: #fff;
+			display: block;
+
+
+			font-size: 12px;
+			font-family: GothamMedium;
+			color: rgb(50, 50, 50);
+			padding-top: 15px;
+			padding-bottom: 15px;
+
+			padding-left: 65px;
+
+			position: relative;
+
+			box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 7px;
+
+			margin-bottom: 15px;
+			border-radius: 3px;
+
+			img{
+				position: absolute;
+				left: 20px;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+		a:hover{
+			text-decoration: none;
+		}
 	}
 }
 
@@ -2690,8 +2928,53 @@ body{
 
 
 
+.cardadded_suc{
+	position: fixed;
+	z-index: 99999;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom:0;
+	-webkit-backdrop-filter: blur(10px);
+	 backdrop-filter: blur(10px); 
+	visibility: hidden;
+	opacity: 0;
 
 
+	padding-left: 30px;
+	padding-right: 30px;
+	img{
+		margin: auto;
+		display: block;
+		max-width: 100%;
+	}
+
+	.clontcardadded{
+		width: 100%;
+	}
+
+	h1{
+		margin: 0;
+		padding: 0;
+
+		text-align: center;
+		font-size: 22px;
+		font-family: GothamBold;
+		color: rgb(50, 50, 50);
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	-webkit-transition: all .25s ease;
+	   -moz-transition: all .25s ease;
+	    -ms-transition: all .25s ease;
+	     -o-transition: all .25s ease;
+	        transition: all .25s ease;
+}
+.cardadded_suc_active{
+	visibility: visible;
+	opacity: 1;
+}
 
 
 
