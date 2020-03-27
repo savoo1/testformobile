@@ -266,6 +266,24 @@ $( "#cardadded_suc" ).click(function(e) {
 });
 
 
+$( ".def_full_height .options_co .option" ).click(function() {
+  $(".def_full_height .options_co .option").removeClass("activatedlanguage");
+  $(this).addClass("activatedlanguage");
+});
+
+
+$( "#loginbtn" ).click(function(e) {
+  e.preventDefault();
+  $(".allertbeforlogin").addClass("allertbeforloginactive");
+});
+
+
+
+
+
+
+
+
 
 
 // timer

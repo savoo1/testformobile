@@ -822,6 +822,23 @@
   .navpowerball .rightsctext:hover {
     text-decoration: none;
     opacity: 0.7; }
+  .navpowerball .rights_b_text {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: GothamBold;
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    color: #333333;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease; }
+  .navpowerball .rights_b_text:hover {
+    text-decoration: none;
+    opacity: 0.7; }
   .navpowerball h2 {
     margin: 0;
     padding: 0;
@@ -2092,6 +2109,14 @@
       padding-top: 12px;
       padding-bottom: 12px;
       position: relative; }
+      .def_full_height .options_co .option p .deftextright {
+        position: absolute;
+        right: 0px;
+        font-family: gotham;
+        top: 50%;
+        transform: translateY(-50%); }
+        .def_full_height .options_co .option p .deftextright img {
+          margin-left: 5px; }
       .def_full_height .options_co .option p .textright {
         position: absolute;
         right: 0px;
@@ -3118,3 +3143,180 @@
   .forsnoweffect .demo a {
     font-family: 'Raleway', sans-serif;
     color: #000; }
+
+.options_co_t_info {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 7px;
+  margin-bottom: 20px; }
+
+.options_language .option img {
+  opacity: 0; }
+
+.options_language .activatedlanguage img {
+  opacity: 1; }
+
+.createyourprofilemenu {
+  z-index: 100;
+  min-height: 48px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-width: 320px; }
+  .createyourprofilemenu .ccmaxw {
+    max-width: 300px;
+    margin: auto; }
+  .createyourprofilemenu h2 {
+    margin: 0;
+    padding: 0px;
+    text-align: center; }
+    .createyourprofilemenu h2 a {
+      font-size: 15px;
+      font-family: GothamMedium;
+      color: #323232;
+      padding-bottom: 5px; }
+    .createyourprofilemenu h2 .finished {
+      color: #EC1919; }
+    .createyourprofilemenu h2 .active {
+      color: #EC1919;
+      border-bottom: 1px solid #EC1919; }
+    .createyourprofilemenu h2 a:hover {
+      text-decoration: none; }
+
+.def_full_height .def_content_place .createyourprofiletit {
+  margin: 0;
+  margin-bottom: 10px;
+  padding-top: 30px; }
+
+.allertbeforlogin {
+  z-index: 999;
+  background: rgba(51, 51, 51, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding-top: 140px;
+  opacity: 0;
+  visibility: hidden; }
+  .allertbeforlogin .box {
+    width: 315px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+    margin: auto;
+    padding: 20px 15px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%); }
+    .allertbeforlogin .box h1 {
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      font-size: 18px;
+      font-family: GothamBold;
+      color: #323232;
+      text-align: center;
+      margin-bottom: 10px; }
+    .allertbeforlogin .box p {
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      font-size: 15px;
+      font-family: GothamMedium;
+      color: #323232;
+      text-align: center;
+      margin-bottom: 10px; }
+    .allertbeforlogin .box .placeforcheckbox {
+      max-width: 170px;
+      display: block;
+      margin: auto;
+      text-align: right;
+      margin-top: 20px;
+      /* Hide the browser's default checkbox */
+      /* Create a custom checkbox */
+      /* On mouse-over, add a grey background color */
+      /* When the checkbox is checked, add a blue background */
+      /* Create the checkmark/indicator (hidden when not checked) */
+      /* Show the checkmark when checked */
+      /* Style the checkmark/indicator */ }
+      .allertbeforlogin .box .placeforcheckbox .containercheckbox {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        font-size: 15px;
+        font-family: GothamMedium;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; }
+      .allertbeforlogin .box .placeforcheckbox .containercheckbox input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0; }
+      .allertbeforlogin .box .placeforcheckbox .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #fff;
+        border: 2px solid #222222; }
+      .allertbeforlogin .box .placeforcheckbox .containercheckbox:hover input ~ .checkmark {
+        background-color: #fff; }
+      .allertbeforlogin .box .placeforcheckbox .containercheckbox input:checked ~ .checkmark {
+        background-color: #fff; }
+      .allertbeforlogin .box .placeforcheckbox .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none; }
+      .allertbeforlogin .box .placeforcheckbox .containercheckbox input:checked ~ .checkmark:after {
+        display: block; }
+      .allertbeforlogin .box .placeforcheckbox .containercheckbox .checkmark:after {
+        left: 6px;
+        top: 2px;
+        width: 5px;
+        height: 10px;
+        border: solid #222222;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg); }
+    .allertbeforlogin .box .down_button {
+      margin-top: 25px; }
+      .allertbeforlogin .box .down_button .button_g {
+        text-align: center;
+        max-width: 340px;
+        display: block;
+        margin: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        z-index: 99; }
+        .allertbeforlogin .box .down_button .button_g a {
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+          background-image: linear-gradient(#52cf70, #29bd67);
+          border-radius: 8px;
+          line-height: 60px;
+          transition-duration: 0.15s;
+          transition-property: opacity;
+          color: #fff;
+          font-family: GothamBold;
+          font-size: 18px;
+          -webkit-transition: all .25s ease;
+          -moz-transition: all .25s ease;
+          -ms-transition: all .25s ease;
+          -o-transition: all .25s ease;
+          transition: all .25s ease; }
+        .allertbeforlogin .box .down_button .button_g a:hover {
+          text-decoration: none;
+          opacity: 0.7; }
+
+.allertbeforloginactive {
+  opacity: 1;
+  visibility: visible; }
