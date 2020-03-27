@@ -183,6 +183,9 @@ $( "input" ).on('input',function(e){
     if($("form")[0].checkValidity()){
       $(".def_full_height .down_button .button_g button").first().removeClass("disabled");
       $(".def_full_height .down_button .button_g a").first().removeClass("disabled");
+    }else{
+      $(".def_full_height .down_button .button_g button").first().addClass("disabled");
+      $(".def_full_height .down_button .button_g a").first().addClass("disabled");
     }
 });
 
@@ -192,14 +195,30 @@ $( ".def_full_height .createyourprofile_form .inputarea2 input" ).click(function
   $(this).parent().addClass("inputarea2activated");
 });
 
+
+var datainputi = 0;
 $('#datainp').on('input',function(event) {
   var inputLength = event.target.value.length;
   if(inputLength === 2){
     var thisVal = event.target.value;
     thisVal += '/';
     $(event.target).val(thisVal);
+    datainputi = datainputi + 1;
   }
+  if(inputLength === 3){
+    if(datainputi === 1){
+      $(this).val("");
+      datainputi = 0;
+    }
+  }
+
 })
+
+
+
+
+
+
 
 
 
