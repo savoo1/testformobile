@@ -2743,3 +2743,378 @@
 
 .result_def_place {
   background: #fff !important; }
+
+.slider_result_per_day {
+  max-width: 380px;
+  min-height: calc(100% - 10px);
+  width: 100%;
+  display: block;
+  margin: auto;
+  padding-top: 30px; }
+  .slider_result_per_day .carousel {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    top: 80px;
+    bottom: 20px; }
+    .slider_result_per_day .carousel .carousel-inner {
+      height: 100%; }
+      .slider_result_per_day .carousel .carousel-inner .carousel-item {
+        height: 100%; }
+    .slider_result_per_day .carousel .carousel-indicators {
+      margin: auto;
+      top: -18px;
+      bottom: unset; }
+    .slider_result_per_day .carousel .carousel-indicators li {
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      margin-left: 4px;
+      margin-right: 4px;
+      border: 0;
+      box-sizing: unset;
+      background: #333333; }
+    .slider_result_per_day .carousel .carousel-indicators .active {
+      background: #EC1919; }
+    .slider_result_per_day .carousel .item_c {
+      height: 100%;
+      background: url("../img/texascowboywatermark.png") center bottom no-repeat, linear-gradient(to right, #F5F5F5, #F5F5F5);
+      background-repeat: repeat-y;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative; }
+      .slider_result_per_day .carousel .item_c .infoic {
+        position: absolute;
+        right: 5px;
+        bottom: 5px; }
+      .slider_result_per_day .carousel .item_c .lefttext {
+        position: absolute;
+        width: 20px;
+        background: url("../img/telxtleftbg.png") center bottom;
+        top: 0;
+        bottom: 0;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        overflow: hidden; }
+      .slider_result_per_day .carousel .item_c .toparea {
+        height: 50px;
+        border-bottom: 1px dashed rgba(34, 34, 34, 0.3);
+        position: relative; }
+        .slider_result_per_day .carousel .item_c .toparea .state {
+          position: absolute;
+          margin: 0;
+          padding: 0;
+          font-family: GothamMedium;
+          color: #323232;
+          font-size: 12px;
+          left: 36px;
+          top: 8px; }
+        .slider_result_per_day .carousel .item_c .toparea .title {
+          position: absolute;
+          margin: 0;
+          padding: 0;
+          font-family: GothamBold;
+          color: #323232;
+          font-size: 16px;
+          left: 36px;
+          top: 21px; }
+        .slider_result_per_day .carousel .item_c .toparea .plays {
+          position: absolute;
+          margin: 0;
+          padding: 0;
+          font-family: GothamMedium;
+          color: rgba(50, 50, 50, 0.7);
+          font-size: 11px;
+          right: 15px;
+          top: 11px; }
+        .slider_result_per_day .carousel .item_c .toparea .number {
+          position: absolute;
+          margin: 0;
+          padding: 0;
+          font-family: GothamBold;
+          color: #323232;
+          font-size: 13px;
+          right: 15px;
+          top: 23px; }
+        .slider_result_per_day .carousel .item_c .toparea .winings {
+          position: absolute;
+          margin: 0;
+          padding: 0;
+          font-family: GothamMedium;
+          color: rgba(50, 50, 50, 0.7);
+          font-size: 11px;
+          right: 70px;
+          top: 11px; }
+        .slider_result_per_day .carousel .item_c .toparea .winingsno {
+          position: absolute;
+          margin: 0;
+          padding: 0;
+          font-family: GothamBold;
+          color: #323232;
+          font-size: 13px;
+          right: 70px;
+          top: 23px; }
+          .slider_result_per_day .carousel .item_c .toparea .winingsno span {
+            color: #ED1919; }
+            .slider_result_per_day .carousel .item_c .toparea .winingsno span img {
+              margin-top: -2px; }
+      .slider_result_per_day .carousel .item_c .main_cont {
+        padding-left: 20px;
+        margin-top: 35px; }
+        .slider_result_per_day .carousel .item_c .main_cont h2 {
+          margin: 0;
+          padding: 0px;
+          font-size: 20px;
+          font-family: GothamBold;
+          color: #333333;
+          text-align: center;
+          margin-bottom: 5px; }
+        .slider_result_per_day .carousel .item_c .main_cont h1 {
+          margin: 0;
+          padding: 0px;
+          font-size: 34px;
+          font-family: GothamBold;
+          color: #333333;
+          text-align: center; }
+        .slider_result_per_day .carousel .item_c .main_cont h4 {
+          margin: 0;
+          padding: 0px;
+          font-size: 10px;
+          font-family: GothamMedium;
+          color: #333333;
+          text-align: center;
+          margin-bottom: 15px;
+          text-transform: uppercase; }
+        .slider_result_per_day .carousel .item_c .main_cont .winnum {
+          margin-top: 20px;
+          margin-bottom: 5px; }
+        .slider_result_per_day .carousel .item_c .main_cont .choosed_numbers {
+          text-align: center;
+          margin-top: 0px;
+          margin-bottom: 10px; }
+          .slider_result_per_day .carousel .item_c .main_cont .choosed_numbers div {
+            display: inline-block;
+            font-size: 21px;
+            line-height: 37px;
+            padding-top: 3px;
+            text-align: center;
+            font-family: GothamMedium;
+            color: #323232;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            box-shadow: rgba(0, 0, 0, 0.33) 0px 2px 5px;
+            margin-right: 1px;
+            position: relative;
+            background: #fff; }
+            .slider_result_per_day .carousel .item_c .main_cont .choosed_numbers div span {
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 0;
+              line-height: 42px; }
+          .slider_result_per_day .carousel .item_c .main_cont .choosed_numbers .activediv {
+            background-image: linear-gradient(#ff2c2c, #d32424);
+            color: #fff;
+            font-family: GothamMedium; }
+        .slider_result_per_day .carousel .item_c .main_cont .ticketindraw {
+          margin-top: 20px;
+          padding-left: 10px;
+          max-width: 350px;
+          margin: auto; }
+          .slider_result_per_day .carousel .item_c .main_cont .ticketindraw p {
+            margin: 0;
+            padding: 0;
+            margin-top: 25px;
+            font-size: 15px;
+            font-family: GothamMedium;
+            color: #323232;
+            text-align: center; }
+          .slider_result_per_day .carousel .item_c .main_cont .ticketindraw .proceed {
+            text-align: center;
+            max-width: 340px;
+            display: block;
+            margin: auto;
+            padding-right: 10px;
+            margin-top: 20px; }
+            .slider_result_per_day .carousel .item_c .main_cont .ticketindraw .proceed a {
+              display: inline-block;
+              width: 100%;
+              text-align: center;
+              background-image: linear-gradient(#52cf70, #29bd67);
+              border-radius: 8px;
+              line-height: 60px;
+              transition-duration: 0.15s;
+              transition-property: opacity;
+              color: #fff;
+              font-family: GothamBold;
+              font-size: 18px;
+              -webkit-transition: all .25s ease;
+              -moz-transition: all .25s ease;
+              -ms-transition: all .25s ease;
+              -o-transition: all .25s ease;
+              transition: all .25s ease; }
+            .slider_result_per_day .carousel .item_c .main_cont .ticketindraw .proceed a:hover {
+              text-decoration: none;
+              opacity: 0.7; }
+        .slider_result_per_day .carousel .item_c .main_cont .pop_numbers {
+          margin-top: 20px;
+          padding-left: 10px;
+          max-width: 350px;
+          margin: auto;
+          position: absolute;
+          bottom: 0;
+          top: 260px;
+          overflow: auto;
+          right: 5px;
+          left: 20px; }
+          .slider_result_per_day .carousel .item_c .main_cont .pop_numbers .boxnumb {
+            margin-bottom: 7px; }
+            .slider_result_per_day .carousel .item_c .main_cont .pop_numbers .boxnumb div {
+              display: inline-block;
+              font-family: MohaveMediumItalic;
+              width: 32px;
+              text-align: center;
+              font-size: 19px;
+              line-height: 23px;
+              opacity: 0.4; }
+            .slider_result_per_day .carousel .item_c .main_cont .pop_numbers .boxnumb .chosedb {
+              opacity: 1; }
+            .slider_result_per_day .carousel .item_c .main_cont .pop_numbers .boxnumb .row_name {
+              margin-right: 25px;
+              opacity: 0.4;
+              font-size: 21px;
+              line-height: 23px;
+              font-family: MohaveItalic; }
+              @media (max-width: 370px) {
+                .slider_result_per_day .carousel .item_c .main_cont .pop_numbers .boxnumb .row_name {
+                  margin-right: 5px; } }
+            .slider_result_per_day .carousel .item_c .main_cont .pop_numbers .boxnumb div:last-child {
+              margin-left: 10px; }
+
+@media (min-width: 991px) {
+  .slider_result_per_day .carousel .carousel-inner {
+    height: calc(100vh - 90px); } }
+
+@media (max-width: 350px) {
+  .slider_result_per_day .carousel .item_c .main_cont .pop_numbers .boxnumb .row_name {
+    margin-right: 0px; }
+  .slider_result_per_day .carousel .item_c .main_cont .pop_numbers .boxnumb div {
+    width: 27px; }
+  .slider_result_per_day .carousel .item_c .main_cont .pop_numbers .boxnumb div:last-child {
+    margin-left: 5px; }
+  .slider_result_per_day .carousel .item_c .main_cont .choosed_numbers div {
+    width: 37px;
+    height: 37px;
+    font-size: 19px; }
+  .slider_result_per_day .carousel .item_c .main_cont .choosed_numbers div span {
+    line-height: 41px; } }
+
+.forsnoweffect {
+  /* customizable snowflake styling */
+  /* Demo Purpose Only*/ }
+  .forsnoweffect .snowflake {
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial;
+    text-shadow: 0 0 1px #000; }
+
+@-webkit-keyframes snowflakes-fall {
+  0% {
+    top: -10%; }
+  100% {
+    top: 100%; } }
+
+@-webkit-keyframes snowflakes-shake {
+  0% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+  50% {
+    -webkit-transform: translateX(80px);
+    transform: translateX(80px); }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); } }
+
+@keyframes snowflakes-fall {
+  0% {
+    top: -10%; }
+  100% {
+    top: 100%; } }
+
+@keyframes snowflakes-shake {
+  0% {
+    transform: translateX(0px); }
+  50% {
+    transform: translateX(80px); }
+  100% {
+    transform: translateX(0px); } }
+  .forsnoweffect .snowflake {
+    position: fixed;
+    top: -10%;
+    z-index: 9999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    -webkit-animation-name: snowflakes-fall,snowflakes-shake;
+    -webkit-animation-duration: 5s,1s;
+    -webkit-animation-timing-function: linear,ease-in-out;
+    -webkit-animation-iteration-count: infinite,infinite;
+    -webkit-animation-play-state: running,running;
+    animation-name: snowflakes-fall,snowflakes-shake;
+    animation-duration: 5s,3s;
+    animation-timing-function: linear,ease-in-out;
+    animation-iteration-count: infinite,infinite;
+    animation-play-state: running,running; }
+  .forsnoweffect .snowflake:nth-of-type(0) {
+    left: 1%;
+    -webkit-animation-delay: 0s,0s;
+    animation-delay: 0s,0s; }
+  .forsnoweffect .snowflake:nth-of-type(1) {
+    left: 10%;
+    -webkit-animation-delay: 1s,1s;
+    animation-delay: 1s,1s; }
+  .forsnoweffect .snowflake:nth-of-type(2) {
+    left: 20%;
+    -webkit-animation-delay: 6s,.5s;
+    animation-delay: 6s,.5s; }
+  .forsnoweffect .snowflake:nth-of-type(3) {
+    left: 30%;
+    -webkit-animation-delay: 4s,2s;
+    animation-delay: 4s,2s; }
+  .forsnoweffect .snowflake:nth-of-type(4) {
+    left: 40%;
+    -webkit-animation-delay: 2s,2s;
+    animation-delay: 2s,2s; }
+  .forsnoweffect .snowflake:nth-of-type(5) {
+    left: 50%;
+    -webkit-animation-delay: 8s,3s;
+    animation-delay: 8s,3s; }
+  .forsnoweffect .snowflake:nth-of-type(6) {
+    left: 60%;
+    -webkit-animation-delay: 6s,2s;
+    animation-delay: 6s,2s; }
+  .forsnoweffect .snowflake:nth-of-type(7) {
+    left: 70%;
+    -webkit-animation-delay: 2.5s,1s;
+    animation-delay: 2.5s,1s; }
+  .forsnoweffect .snowflake:nth-of-type(8) {
+    left: 80%;
+    -webkit-animation-delay: 1s,0s;
+    animation-delay: 1s,0s; }
+  .forsnoweffect .snowflake:nth-of-type(9) {
+    left: 90%;
+    -webkit-animation-delay: 0.5s,1.5s;
+    animation-delay: 0.5s,1.5s; }
+  .forsnoweffect .demo {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center; }
+  .forsnoweffect .demo a {
+    font-family: 'Raleway', sans-serif;
+    color: #000; }
