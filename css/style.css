@@ -2322,7 +2322,8 @@
   .slidingmontharea .boxforslide {
     overflow: auto;
     direction: rtl;
-    padding-top: 15px; }
+    padding-top: 15px;
+    padding-bottom: 15px; }
     .slidingmontharea .boxforslide .boxofboxes {
       white-space: nowrap;
       direction: rtl; }

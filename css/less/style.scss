@@ -3010,6 +3010,13 @@ body{
 
 
 .slidingmontharea{
+
+	a{
+		text-decoration: none;
+	}
+	a:hover{
+		text-decoration: none;
+	}
 	
 	text-align: right;
 	.def_max_width{
@@ -3021,7 +3028,7 @@ body{
 		overflow: auto;
 		direction:rtl; 
 		padding-top: 15px;
-		// padding-bottom: 15px;
+		padding-bottom: 15px;
 		.boxofboxes{
 			white-space: nowrap;
 			direction:rtl; 
