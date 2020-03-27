@@ -931,6 +931,20 @@ body{
 		right: 15px;
 		top: 10px;
 
+		.location{
+			margin: 0;
+			padding: 0;
+			font-size: 12px;
+			color: #333333;
+			font-family: GothamBold;
+			padding-top: 5px;
+			img{
+				max-width: 16px;
+				margin-left: 4px;
+				margin-top: -2px;
+			}
+		}
+
 		.alert{
 			width: 13px;
 			height: 13px;
@@ -2426,6 +2440,35 @@ body{
 				background: #ABB5BE;
 			}
 		}
+		.button_n{
+			.disabled{
+				background: rgb(82, 207, 112);
+				background-image: linear-gradient(rgb(82, 207, 112), rgb(41, 189, 103));
+				opacity: 0.5;
+			}
+		}
+	}
+	.down_button_cr{
+		.claimrewardtext{
+			margin: 0;
+			padding: 0;
+
+			text-align: center;
+			font-size: 12px;
+			font-family: GothamBook;
+			color: #333333;
+
+			max-width: 230px;
+			margin: auto;
+
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 20px;
+		}
+		.button_g{
+			bottom: 70px;
+		}
 	}
 	.def_content_place{
 		padding-top: 48px;
@@ -2497,6 +2540,58 @@ body{
 
 			margin-bottom: 10px;
 			margin-top: -10px;
+		}
+	}
+	.def_content_place_cr{
+		@media(max-width: 991px){
+			bottom: 130px;
+		}
+
+		.amount_done_rewardcode{
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			img{
+				display: block;
+				margin: auto;
+			}
+			h2{
+				margin: 0;
+				padding: 0;
+
+				color: rgba(51, 51, 51, 0.5);
+				font-size: 15px;
+				font-family: GothamBold;
+				text-align: center;
+				text-transform: uppercase;
+
+				margin-top: 20px;
+			}
+			h1{
+				margin: 0;
+				padding: 0;
+
+				color: #111111;
+				font-size: 30px;
+				font-family: GothamBold;
+				text-align: center;
+				text-transform: uppercase;
+
+				margin-top: -3px;
+			}
+			p{
+				margin: 0;
+				padding: 0;
+
+				color: rgba(51, 51, 51, 0.5);
+				font-size: 12px;
+				font-family: GothamBookItalic;
+				text-align: center;
+
+				margin-top: 25px;
+			}
 		}
 	}
 	.without_button{
@@ -3031,6 +3126,64 @@ body{
 			margin-bottom: 15px;
 		}
 	}
+	.boxforslide_result{
+		padding-bottom: 5px;
+		// border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+		// display: inline-block;
+	}
+	
+	.boxforslide_result2{
+		padding-bottom: 10px;
+		padding-top: 10px;
+		.box_list{
+			height: 25px;
+			display: inline-block;
+			padding-right: 10px;
+			padding-left: 5px;
+			position: relative;
+
+
+			@media(max-width: 772px){
+				margin-left: 0px;
+				margin-right: 5px;
+			}
+			white-space: nowrap;
+
+			.boxinside{
+				h2{
+					margin: 0;
+					padding: 0;
+					font-size: 12px;
+					font-family: GothamBold;
+					position: relative;
+					img{
+						right: 0;
+					    position: absolute;
+					    left: 0;
+					    display: block;
+					    margin: auto;
+					    opacity: 0;
+					}
+				}
+			}
+		}
+		.box_list_active{
+			.boxinside{
+				h2{
+					color: #EC1919;
+					img{
+						opacity: 1;
+					}
+				}
+			}
+		}
+		.box_c:last-child{
+			margin-left: 20px;
+		}
+		.box_c:first-child{
+			margin-right: 10px;
+		}
+	}
 	*::-webkit-scrollbar {
 	  width: 0px;
 	}
@@ -3132,7 +3285,11 @@ body{
 	}
 }
 
-
+.linelikeborder{
+	width: 100%;
+	height: 1px;
+	background: rgba(51, 51, 51, 0.2);
+}
 
 .game_tichets{
 	a{
@@ -3213,18 +3370,230 @@ body{
 }
 
 
+.rewards_balance{
+	min-height: 80px;
+	background: transparent;
+
+	margin-bottom: 20px;
+
+	p{
+		margin: 0;
+		padding: 0;
+
+		text-align: center;
+		font-size: 15px;
+		font-family: GothamBold;
+		text-align: center;
+		text-transform: uppercase;
+		color: rgba(51, 51, 51, 0.5);
+
+		padding-top: 25px;
+	}
+	h2{
+		margin: 0;
+		padding: 0;
+
+		text-align: center;
+		font-size: 30px;
+		font-family: GothamBold;
+		text-align: center;
+		text-transform: uppercase;
+
+		margin-top: -3px;
+	}
+}
 
 
+.rewardsinput{
+	width: 100%;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 10px;
+	background: #fff;
 
+	.palceofinput{
+		position: relative;
 
+		p {
+		    margin: 0;
+		    padding: 0px;
+		    font-size: 12px;
+		    font-family: GothamMedium;
+		    color: #323232;
+		    text-transform: uppercase;
+		    position: absolute;
+		    left: 0;
+		    top: 50%;
+		    transform: translateY(-50%);
+		    z-index: 0;
+		}
+	}
 
+	input{
+		border: 0;
+		width: 100%;
+		text-align: center;
+		font-size: 15px;
+		font-family: gotham;
+		color: #333333;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		z-index: 999;
+		padding-left: 100px;
 
+	}
+	input:focus{
+		outline: none;
+	}
 
+	*::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	  color: rgba(51, 51, 51, 0.3);
+	  opacity: 1; /* Firefox */
+	}
 
+	*:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	  color: rgba(51, 51, 51, 0.3);
+	}
 
+	*::-ms-input-placeholder { /* Microsoft Edge */
+	  color: rgba(51, 51, 51, 0.3);
+	}
 
+}
 
+.game_tichets_result{
+	a{
+		text-decoration: none;
+	}
+	a:hover,a:focus{
+		text-decoration: none !important;
+	}
+	.ticket_gt{
+		border-top: 1px solid rgba(51, 51, 51, 0.2);
+		
+		position: relative;
+		margin-top: 5px;
 
+		.firstarea{
+			position: relative;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			padding-left: 75px;
+		}
+		h4{
+			margin: 0;
+			padding: 0;
+
+			color: #EC1919;
+			text-align: center;
+			font-size: 10px;
+			font-family: GothamMedium;
+
+			border-top: 1px solid #EC1919;
+			padding-top: 3px;
+			margin-top: 4px;
+			padding-bottom: 5px;
+		}
+
+		.ChevronArrowRight{
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		.lefticon{
+			position: absolute;
+			left: 0;
+			width: 55px;
+			height: 50px;
+			box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 7px;
+			border-radius: 4px;
+			overflow: hidden;
+			text-align: center;
+			top: 13px;
+
+			.topline{
+				position: absolute;
+				top: 0;
+				height: 8px;
+				background: #EC1919;
+				width: 100%;
+			}
+			.toplinewined{
+				background: #52CF70;
+			}
+
+			h3{
+				margin: 0;
+				padding: 0;
+
+				text-align: center;
+				font-size: 15px;
+				font-family: GothamBook;
+				color: #333333;
+				padding-top: 20px;
+			}
+
+		}
+
+		h2{
+			margin: 0;
+			padding: 0;
+
+			text-align: left;
+			font-size: 20px;
+			font-family: GothamBold;
+			color: #333333;
+			margin-bottom: 3px;
+		}
+		p{
+			margin: 0;
+			padding: 0;
+
+			text-align: left;
+			font-size: 10px;
+			font-family: GothamMedium;
+			color: #333333;
+			text-transform: uppercase;
+		}
+
+		.choosed_numbers{
+			text-align: left;
+			margin-top: 0px;
+			div{
+				display: inline-block;
+				font-size: 15px;
+				line-height: 37px;
+				padding-top: 3px;
+				text-align: center;
+				font-family: GothamMedium;
+				color: rgb(50, 50, 50);
+				width: 27px;
+				height: 27px;
+				border-radius: 50%;
+				box-shadow: rgba(0, 0, 0, 0.33) 0px 2px 5px;
+				margin-right: 1px;
+				position: relative;
+				span{
+					position: absolute;
+					left: 0;
+					right: 0;
+
+					top: 0;
+					line-height: 30px;
+				}
+			}
+			.activediv{
+				background-image: linear-gradient(rgb(255, 44, 44), rgb(211, 36, 36));
+				color: #fff;
+				font-family: GothamMedium;
+			}
+		}
+	}
+}
+
+.result_def_place{
+	background: #fff !important;
+}
 
 
 

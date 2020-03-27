@@ -34,6 +34,9 @@ $( ".c_nav .leftside .notification" ).click(function() {
 $( ".everything_cont .box .firstline .location" ).click(function() {
   	$(".locationpopup").addClass("defpopupactivated");
 });
+$( ".navpowerball .rightsc .location" ).click(function() {
+    $(".locationpopup").addClass("defpopupactivated");
+});
 $( ".everything_cont .box .orderticket a" ).click(function(e) {
 	e.preventDefault();
   	$(".howoldareyou").addClass("defpopupactivated");
@@ -51,7 +54,7 @@ $( ".defpopu .popupbody .contbodypopup .states p" ).click(function() {
   	$(".defpopu .popupbody .contbodypopup .states p").removeClass("activeone");
   	$(this).addClass("activeone");
   	var att = $( this ).attr( "name" );
-  	$(".everything_cont .box .firstline .location span").html(att);
+  	$(".location span").html(att);
 
   	setTimeout(function(){
   	  $(".locationpopup").removeClass("defpopupactivated");
@@ -212,13 +215,41 @@ $('#datainp').on('input',function(event) {
     }
   }
 
+});
+
+var rewardscodei = 0;
+$('#rewardscode').on('input',function(event) {
+  var inputLength = event.target.value.length;
+  if(inputLength === 4){
+    var thisVal = event.target.value;
+    thisVal += '-';
+    $(event.target).val(thisVal);
+    rewardscodei = rewardscodei + 1;
+  }
+  if(inputLength === 5){
+    if(rewardscodei === 1){
+      $(this).val("");
+      rewardscodei = 0;
+    }
+  }
+
 })
+
+
+
+
 
 
 
 $( ".slidingmontharea .box_c" ).click(function() {
   $(".slidingmontharea .box_c").removeClass("activatedbox");
   $(this).addClass("activatedbox");
+});
+
+
+$( ".slidingmontharea .boxforslide_result2 .box_list" ).click(function() {
+  $(".slidingmontharea .boxforslide_result2 .box_list").removeClass("box_list_active");
+  $(this).addClass("box_list_active");
 });
 
 
