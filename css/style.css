@@ -12,6 +12,10 @@
   src: url("../fonts/GothamMedium.otf"); }
 
 @font-face {
+  font-family: GothamBook;
+  src: url("../fonts/GothamBook.otf"); }
+
+@font-face {
   font-family: GothamLightItalic;
   src: url("../fonts/GothamLightItalic.otf"); }
 
@@ -2306,3 +2310,144 @@
 .cardadded_suc_active {
   visibility: visible;
   opacity: 1; }
+
+.slidingmontharea {
+  text-align: right;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */ }
+  @media (max-width: 772px) {
+    .slidingmontharea .def_max_width {
+      padding: 0; } }
+  .slidingmontharea .boxforslide {
+    overflow: auto;
+    direction: rtl;
+    padding-top: 15px; }
+    .slidingmontharea .boxforslide .boxofboxes {
+      white-space: nowrap;
+      direction: rtl; }
+    @media (min-width: 1050px) {
+      .slidingmontharea .boxforslide {
+        margin-bottom: 15px; } }
+  .slidingmontharea *::-webkit-scrollbar {
+    width: 0px; }
+  .slidingmontharea *::-webkit-scrollbar-track {
+    background: transparent; }
+  .slidingmontharea *::-webkit-scrollbar-thumb {
+    background: transparent; }
+  .slidingmontharea *::-webkit-scrollbar-thumb:hover {
+    background: transparent; }
+  @media (min-width: 1050px) {
+    .slidingmontharea {
+      /* Track */
+      /* Handle */
+      /* Handle on hover */ }
+      .slidingmontharea *::-webkit-scrollbar {
+        height: 3px; }
+      .slidingmontharea *::-webkit-scrollbar-track {
+        background: whitesmoke; }
+      .slidingmontharea *::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.2); }
+      .slidingmontharea *::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 0, 0, 0.5); } }
+  .slidingmontharea .box_c {
+    width: 72px;
+    height: 72px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 7px;
+    border-radius: 60%;
+    position: relative;
+    white-space: nowrap; }
+    @media (max-width: 772px) {
+      .slidingmontharea .box_c {
+        margin-left: 0px;
+        margin-right: 5px; } }
+    .slidingmontharea .box_c .boxinside {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%); }
+      .slidingmontharea .box_c .boxinside h2 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 15px;
+        font-family: GothamBold; }
+      .slidingmontharea .box_c .boxinside p {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 15px;
+        font-family: GothamBook;
+        margin-top: -5px; }
+  .slidingmontharea .box_c:last-child {
+    margin-left: 20px; }
+  .slidingmontharea .box_c:first-child {
+    margin-right: 10px; }
+  .slidingmontharea .activatedbox {
+    background: #ff2c2c;
+    background: -moz-linear-gradient(top, #ff2c2c 0%, #d32424 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #ff2c2c), color-stop(100%, #d32424));
+    background: -webkit-linear-gradient(top, #ff2c2c 0%, #d32424 100%);
+    background: -o-linear-gradient(top, #ff2c2c 0%, #d32424 100%);
+    background: -ms-linear-gradient(top, #ff2c2c 0%, #d32424 100%);
+    background: linear-gradient(to bottom, #ff2c2c 0%, #d32424 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2c2c', endColorstr='#d32424', GradientType=0 ); }
+    .slidingmontharea .activatedbox .boxinside h2, .slidingmontharea .activatedbox .boxinside p {
+      color: #fff; }
+
+.game_tichets .ticket_gt {
+  border-top: 1px solid rgba(51, 51, 51, 0.2);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 60px;
+  position: relative; }
+  .game_tichets .ticket_gt .ChevronArrowRight {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%); }
+  .game_tichets .ticket_gt .lefticon {
+    position: absolute;
+    left: 0;
+    width: 44px;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 7px;
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+    top: 13px; }
+    .game_tichets .ticket_gt .lefticon .topline {
+      position: absolute;
+      top: 0;
+      height: 7px;
+      background: #EC1919;
+      width: 100%; }
+    .game_tichets .ticket_gt .lefticon .toplinewined {
+      background: #52CF70; }
+    .game_tichets .ticket_gt .lefticon h3 {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-size: 15px;
+      font-family: GothamBook;
+      color: #333333;
+      padding-top: 14px; }
+  .game_tichets .ticket_gt h2 {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 17px;
+    font-family: GothamBold;
+    color: #333333; }
+  .game_tichets .ticket_gt p {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 10px;
+    font-family: GothamMedium;
+    color: #333333;
+    text-transform: uppercase; }

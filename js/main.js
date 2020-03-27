@@ -216,6 +216,10 @@ $('#datainp').on('input',function(event) {
 
 
 
+$( ".slidingmontharea .box_c" ).click(function() {
+  $(".slidingmontharea .box_c").removeClass("activatedbox");
+  $(this).addClass("activatedbox");
+});
 
 
 
@@ -292,3 +296,6 @@ $(window).bind("load", function () {
 	$(".loader").addClass("loaderdisabled");
 	}, 200);
 });
+
+
+
